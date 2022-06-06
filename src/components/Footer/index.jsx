@@ -1,9 +1,8 @@
-import React from 'react'
-import logo from '../../assets/logo-consulta.png'
-import Copyright from '../Copyright'
+import React from "react";
+import logo from "../../assets/logo-consulta.png";
 
-import { Container, Typography, Grid } from '@material-ui/core'
-import { makeStyles } from '@material-ui/core/styles'
+import { Container, Typography, Grid } from "@material-ui/core";
+import { makeStyles } from "@material-ui/core/styles";
 
 export default function Footer() {
   const styles = useStyles();
@@ -16,17 +15,16 @@ export default function Footer() {
           <Typography variant="subtitle1" component="p">
             Desenvolvido em Belo Horizonte
           </Typography>
-          <Copyright />
         </Grid>
       </Container>
     </footer>
   );
 }
 
-const useStyles = makeStyles(theme => ({
+const useStyles = makeStyles((theme) => ({
   footer: {
-    backgroundColor: '#232e33',
+    backgroundColor: "#232e33",
     padding: theme.spacing(6, 0),
-    color: '#fdfdfd'
-  }
+    color: "#fdfdfd",
+  },
 }));
